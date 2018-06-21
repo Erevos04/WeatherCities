@@ -1,0 +1,25 @@
+<html>
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="/weather.component.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  </head>
+  <body>
+
+<div id="data" class="WeatherData">
+ <ul class="list-group">
+
+ <li class="list-group-item list-header"> Weather Data of {{date}} <button type="button" id="x" class="btn btn-warning btn-circle btn-md"><i class="glyphicon glyphicon-remove"></i></button></li>
+ <li id="maxtemp" class="list-group-item list-group-item-danger"><i class="wi wi-thermometer"></i> Max Temperature : {{maxTempm}}<i class="wi wi-celsius"></i></li>
+ <li id="mintemp" class="list-group-item list-group-item-success"><i class="wi wi-thermometer-exterior"></i> Min Temperature : {{minTempm}}<i class="wi wi-celsius"></i></li>
+ <li id="maxhum" class="list-group-item list-group-item-warning"><i class="wi wi-humidity"></i> Max Humidity : {{maxHumidity}}% </li>
+ <li id="precip" class="list-group-item list-group-item-info"><i class="wi wi-raindrops"></i> Total Precipitation : {{totalPrecipm}}mm </li>
+ </ul>
+  </div>
+
+</body>
+</html>

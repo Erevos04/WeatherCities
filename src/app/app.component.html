@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+
+
+<app-cities (selectedCity)='updateCity($event)'></app-cities>
+
+
+
+<app-weather *ngIf = 'selectedCity' [selectedUrl]='selectedCity.url' ></app-weather>
+
+
+</body>
+</html>
