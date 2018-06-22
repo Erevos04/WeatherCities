@@ -1,6 +1,7 @@
 body{
   background-color: transparent;
-  min-height: 39vw;
+  min-height: 80vh;
+  min-width: 768px;
 
 }
 #headerbackground{
@@ -11,51 +12,51 @@ body{
 
 #Home{
   font-family: calibri;
-  font-size: 1.4vw;
+  font-size: 20px;
   text-decoration: underline;
   position: absolute;
-  left: 6.5vw;
+  left: 65px;
 }
 
 .navbar-text{
   font-family: calibri;
-  font-size: 1.4vw;
+  font-size: 20px;
 }
 
 .row{
-  margin-left: 18vw;
+  animation : fadein 1s linear;
+  margin-left: 220px;
   opacity: 0.93;
   position: absolute;
-  margin-top: 7vw;
-  width: 20vw;
+  margin-top: 90px;
+  width: 270px;
 }
 
 
 .list-group{
   cursor: pointer;
-  font-size: 1.2vw;
+  font-size: 16px;
   font-family: calibri;
   color: #5E626C;
-  max-height: 20vh;
 }
 
 .panel-title{
   font-weight: bold;
-  font-size: 1.6vw;
+  font-size: 20px;
   font-family: calibri;
   color: #5E626C;
 }
 
 #x{
-    position: relative;
+    position: absolute;
     background: #D95E3C;
-    right: -4.2vw;
-    top: -0.7vw;
+    left: 180px;
+    top: 0;
     font-family: calibri;
 }
 
 #search-box{
-  width:15vw;
+  width: 70%;
 }
 
 @keyframes fadeinheader {

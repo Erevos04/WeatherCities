@@ -6,24 +6,24 @@ body{
 .WeatherData{
   animation: rightmove-fadein 0.3s linear;
   position: absolute;
-  width: 21vw;
-  font-size: 1.2vw;
-  margin-left: 57vw;
+  width: 280px;
+  font-size: 16px;
+  margin-left: 780px;
   opacity: 0.93;
   font-family: calibri;
-  top: -44vh;
+  top: 250px;
 }
 
 .list-header{
   color: #5E626C;
   background-color: #9BA89F;
   font-weight: bold;
-
+  font-size: 16px;
 }
 
 @keyframes rightmove-fadein {
   0% { opacity: 0 }
   100% { opacity: 0.93 }
-  from {margin-left: 42vw;}
-  to {margin-left:57vw;}
+  from {margin-left: 550px;}
+  to {margin-left:780px;}
 }

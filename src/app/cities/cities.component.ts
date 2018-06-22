@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Cities } from '../cities';
+import { Cities } from '../Cities';
 
 @Component({
   selector: 'app-cities',
