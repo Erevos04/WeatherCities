@@ -1,15 +1,27 @@
 body{
   background-color: transparent;
-  min-height: 23vw;
-  max-width: 20vw
+  min-height: 39vw;
+
+}
+#headerbackground{
+  opacity: 0.70;
+  background-color: #DEEFF3;
+  animation: fadeinheader 4s ;
+}
+
+#header{
+  font-family: calibri;
+  min-width: 40vw;
+  text-align: left;
+  color: #133139;
 }
 
 .row{
-  margin-left: 23vw;
+  margin-left: 18vw;
   width: 60vw;
   opacity: 0.93;
   position: relative;
-  margin-top: 15vw;
+  margin-top: 7vw;
 }
 
 
@@ -21,10 +33,23 @@ body{
 
 .panel-title{
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   font-family: calibri;
+  color: #133139;
+}
+
+#x{
+    position: absolute;
+    background: #D95E3C;
+    right: 1.1vw;
+    top:0;
 }
 
 #search-box{
   width:15vw;
+}
+
+@keyframes fadeinheader {
+  0% { opacity: 0 }
+  100% { opacity: 0.70 }
 }

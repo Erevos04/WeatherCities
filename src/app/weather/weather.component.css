@@ -10,23 +10,16 @@ body{
   width: 21vw;
   font-size: 1.2vw;
   margin-left: 57vw;
-  opacity: 0.90;
+  opacity: 0.93;
   font-family: calibri;
   top: -20vw;
 
 }
 
 .list-header{
-  background-color: #E4E06D;
+  color: #133139;
+  background-color: #819272;
   font-weight: bold;
-}
-
-#x{
-    position: absolute;
-    background: #CE2121;
-    color: white;
-    top: -10px;
-    right: -20px;
 }
 
 @keyframes rightmove-fadein {
@@ -34,12 +27,4 @@ body{
   100% { opacity: 1 }
   from {margin-left: 42vw;}
   to {margin-left:57vw;}
-}
-
-@keyframes leftmove-fadeout {
-  0% { opacity: 1 }
-  100% { opacity: 0 }
-  from {margin-right: 55vw;}
-  to {margin-left: 45vw;}
-
 }

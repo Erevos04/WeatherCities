@@ -3,21 +3,35 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link rel="stylesheet" href="/cities.component.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="/weather.component.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
 </head>
 <body>
+
+<div id="headerbackground">
+	<header id="header">
+		<div class="container clearfix">
+				<h1><i class="wi wi-day-lightning"></i> Welcome to WeatherCities<br>
+					The easiest way to learn about the weather in 5 major destinations!
+				</h1>
+
+		</div>
+	</header>
+</div>
 
 <div class="container">
 	<div class="row">
 	        <div class="col-md-4">
 	            <div class="panel panel-info">
-	                <div class="panel-heading">
-	                    <h3 class="panel-title">Select City</h3>
+	                <div class="panel-heading" >
+	                    <h2 class="panel-title">Select City<button *ngIf = 'selectedCity' type="button" id="x" class="btn btn-warning btn-circle btn-md" (click)='selectCity(undefined)'><i class="glyphicon glyphicon-remove"></i> Back</button></h2>
 											<input #searchBox id="search-box" (keyup)="search(searchBox.value)" type="text" placeholder="Filter Cities" />
 	                </div>
 	                <ul class="list-group">
 	                    <a *ngFor = "let city of filteredCities" (click)='selectCity(city)' class="list-group-item">{{city.name}}</a>
+
 	                </ul>
+
 	            </div>
 	        </div>
 				</div>

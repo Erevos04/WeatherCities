@@ -13,7 +13,7 @@ import { CitiesComponent } from './cities/cities.component';
     AppComponent,
     WeatherComponent,
     MessagesComponent,
-    CitiesComponent   
+    CitiesComponent
   ],
   imports: [
   BrowserModule,

@@ -7,7 +7,7 @@ import { Cities } from '../cities';
   styleUrls: ['./cities.component.css']
 })
 export class CitiesComponent implements OnInit {
-  
+
 cities: Cities[] = [{
   id:0,
   name: 'New York',
@@ -28,9 +28,8 @@ cities: Cities[] = [{
   id:4,
   name: 'San Francisco (Oakland)',
   url: 'http://api.wunderground.com/api/ab5ff0e58f32c6cf/history_20171030/q/CA/Oakland.json'
-}
-]
-
+}]
+  
 selectedCity: Cities;
 filteredCities = this.cities;
 
