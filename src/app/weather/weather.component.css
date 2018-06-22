@@ -4,7 +4,6 @@ body{
 }
 
 .WeatherData{
-  opacity: 1;
   animation: rightmove-fadein 0.3s linear;
   position: absolute;
   width: 21vw;
@@ -12,19 +11,19 @@ body{
   margin-left: 57vw;
   opacity: 0.93;
   font-family: calibri;
-  top: -20vw;
-
+  top: -44vh;
 }
 
 .list-header{
-  color: #133139;
-  background-color: #819272;
+  color: #5E626C;
+  background-color: #9BA89F;
   font-weight: bold;
+
 }
 
 @keyframes rightmove-fadein {
   0% { opacity: 0 }
-  100% { opacity: 1 }
+  100% { opacity: 0.93 }
   from {margin-left: 42vw;}
   to {margin-left:57vw;}
 }

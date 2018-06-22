@@ -4,24 +4,30 @@ body{
 
 }
 #headerbackground{
-  opacity: 0.70;
+  opacity: 0.85;
   background-color: #DEEFF3;
   animation: fadeinheader 4s ;
 }
 
-#header{
+#Home{
   font-family: calibri;
-  min-width: 40vw;
-  text-align: left;
-  color: #133139;
+  font-size: 1.4vw;
+  text-decoration: underline;
+  position: absolute;
+  left: 6.5vw;
+}
+
+.navbar-text{
+  font-family: calibri;
+  font-size: 1.4vw;
 }
 
 .row{
   margin-left: 18vw;
-  width: 60vw;
   opacity: 0.93;
-  position: relative;
+  position: absolute;
   margin-top: 7vw;
+  width: 20vw;
 }
 
 
@@ -29,20 +35,23 @@ body{
   cursor: pointer;
   font-size: 1.2vw;
   font-family: calibri;
+  color: #5E626C;
+  max-height: 20vh;
 }
 
 .panel-title{
   font-weight: bold;
   font-size: 1.6vw;
   font-family: calibri;
-  color: #133139;
+  color: #5E626C;
 }
 
 #x{
-    position: absolute;
+    position: relative;
     background: #D95E3C;
-    right: 1.1vw;
-    top:0;
+    right: -4.2vw;
+    top: -0.7vw;
+    font-family: calibri;
 }
 
 #search-box{
@@ -51,5 +60,5 @@ body{
 
 @keyframes fadeinheader {
   0% { opacity: 0 }
-  100% { opacity: 0.70 }
+  100% { opacity: 0.85 }
 }

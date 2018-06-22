@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, onChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { Weather } from '../weather';
 import { WeatherService } from '../weather.service';
 
@@ -7,7 +7,7 @@ import { WeatherService } from '../weather.service';
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css']
 })
-export class WeatherComponent {
+export class WeatherComponent implements OnChanges {
 @Input() selectedUrl: string;
 
 weatherData: Weather[];

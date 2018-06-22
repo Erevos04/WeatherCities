@@ -6,7 +6,7 @@ import { Cities } from '../cities';
   templateUrl: './cities.component.html',
   styleUrls: ['./cities.component.css']
 })
-export class CitiesComponent implements OnInit {
+export class CitiesComponent {
 
 cities: Cities[] = [{
   id:0,
@@ -29,8 +29,7 @@ cities: Cities[] = [{
   name: 'San Francisco (Oakland)',
   url: 'http://api.wunderground.com/api/ab5ff0e58f32c6cf/history_20171030/q/CA/Oakland.json'
 }]
-  
-selectedCity: Cities;
+
 filteredCities = this.cities;
 
 selectCity(city:Object): void {
@@ -42,10 +41,5 @@ search(value:string): void {
 }
 
 @Output() selectedCity = new EventEmitter<Object>();
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

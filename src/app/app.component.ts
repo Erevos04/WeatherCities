@@ -12,5 +12,5 @@ export class AppComponent {
   updateCity(city: Object): void {
     this.selectedCity = city;
   }
-
+        
 }

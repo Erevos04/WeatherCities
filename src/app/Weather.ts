@@ -3,7 +3,7 @@ export class Weather {
   minTempm: number;
   maxHumidity: number;
   totalPrecipm: number;
-  precipm: number;
+  precipm: string;
   tempm: string;
   hum: string;
 }
